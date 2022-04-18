@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registro_datos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yurydaniel.myapplication.RegistroDatos">
+
+    <TextView
+        android:text="Nombre Del Halconero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="85dp"
+        android:id="@+id/textView2" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:id="@+id/ListaControl"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListaDeAlconeros"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:text="Hora: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/ListaControl"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:text="Acción de Control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/ListaDeAlconeros"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:text="Fecha:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView8" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:id="@+id/TextHora"
+        android:text="hora" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignLeft="@+id/TextHora"
+        android:layout_alignStart="@+id/TextHora"
+        android:id="@+id/TextFecha"
+        android:text="fecha" />
+
+    <RelativeLayout
+        android:id="@+id/bInferior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/listo"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

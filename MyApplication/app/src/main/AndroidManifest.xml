@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yurydaniel.myapplication">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icono5"
+        android:label="Registro control de fauna"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistroDatos"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Registro de datos"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.REGISTRO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".POND"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Pond"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.POND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Formulario"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Formulario"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.FORMULARIO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.yurydaniel.fileprovider" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+                <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+                <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FormularioZonaAire"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Formulario zona aire"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.FORMULARIOZONAAIRE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.yurydaniel.fileprovider" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+                <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+                <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mapa"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Área restringida"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.FORMULARIOZONAAIRE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".recursos"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape">
+
+
+        </activity>
+    </application>
+
+</manifest>

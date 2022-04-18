@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.usuario.myapplication.Formulario">
+    <item
+        android:id="@+id/sol"
+        android:title=" Sol"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_wb_sunny_black_24dp"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/pprincipal"
+        android:title=" Pagina principal"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_first_page_black_24dp"
+        android:orderInCategory="100"
+        />
+    <item
+        android:id="@+id/siguiente"
+        android:title=" Siguiente"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:orderInCategory="100"
+        />
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_recursos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="yurydaniel.myapplication.recursos">
+
+    <Button
+        android:text="Abrir Formulario Zona Aire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:id="@+id/btnZonaAire"
+        android:layout_below="@+id/btnAreaRestringida"
+        android:layout_alignLeft="@+id/btnPOND"
+        android:layout_alignStart="@+id/btnPOND" />
+
+    <Button
+        android:text="Abrir Formulario Area Restringida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:id="@+id/btnAreaRestringida"
+        android:layout_below="@+id/btnPOND"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="298dp"
+        android:layout_marginEnd="298dp" />
+
+    <Button
+        android:text="Abrir Formulario Pond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="114dp"
+        android:id="@+id/btnPOND"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnAreaRestringida"
+        android:layout_alignStart="@+id/btnAreaRestringida" />
+
+    <TextView
+        android:text="Los datos a continuacion presentados no podran ser editados, o en caso de realizar algun cambhio, no se presentaran en el documento original pues estos son solo una copia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnPOND"
+        android:layout_toLeftOf="@+id/btnPOND"
+        android:layout_toStartOf="@+id/btnPOND"
+        android:id="@+id/textView12" />
+
+</RelativeLayout>
